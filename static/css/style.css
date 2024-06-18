@@ -1,0 +1,90 @@
+/* Font Navbar */
+.navbar a{
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/* Cor do botão Navbar */
+.navbar ul li a {
+    color: whitesmoke;
+}
+
+.navbar ul li a:hover {
+    color: darkgray;
+}
+
+/* Custom Background */
+.bg-black{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.bg-gray{
+    background-color: #e7e7e7;
+    color: black;
+}
+
+/* Carousel Stuff */
+.text-white-black-border {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: whitesmoke;
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+.carousel img{
+    opacity: 0.9;
+}
+
+.carousel-inner{
+    height: 550px;
+}
+
+.no-bullets {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+input{
+    width: 49%;
+    height: 30px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+textarea{
+    width: 98.5%;
+    height: 100px;
+    padding-left: 10px;
+    resize: none;
+}
+
+.comment{
+    width: 98.5%;;
+}
+@media (max-width: 450px){
+    .carousel-inner{
+        height: 100%;
+    }
+    input{
+        width: 98.5%;;
+    }
+}
+
+.bg-nav{
+    background-color: #900000;
+}
+
+footer{
+    background-image: repeating-linear-gradient(-45deg, #6a6a6a 0, #6a6a6a 2px, #727272 2px, #727272 11px);
+}

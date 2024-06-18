@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+<!--Título-->
+{% block title %}login{% endblock %}
+
+<!--Conteúdo-->
+{% block content %}
+
+<h3 class="text-center">Comentários</h3>
+<center>
+    <div class="d-flex justify-content-center flex-column col-md-8 mb-1">
+        <form action="/comment" method="post">
+            <input type="text" name="email" placeholder="Email" id="email" required>
+            <input type="text" name="username" placeholder="Nome de Usuario" id="username" required><br>
+            <textarea id="content" name="content" placeholder="Comentário" required></textarea>
+            <div class="msg">{{ msg }}</div>
+            <button class="btn btn-dark" type="submit" value="Enviar">Enviar</button>
+        </form>
+        <center>
+            {% for comment in comment[:5] %}
+            <div class="card p-2 px-4 mt-1 comment">
+                <div>
+                    <div class="d-flex justify-content-between">
+                        <h5 class="mr-2">{{ comment[0] }}</h5>
+                        <span class="mb-1 pl-2 comment-time"><i class="fa fa-clock me-2"></i>{{ comment[2] }}</span>
+                    </div>
+                    <div class="text-start">
+                        <span>
+                            {{ comment[1] }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </center>
+    </div>
+</center>
+
+{% endblock %}

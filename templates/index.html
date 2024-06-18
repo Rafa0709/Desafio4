@@ -1,0 +1,153 @@
+
+{% extends 'base.html' %}
+
+<!--Título-->
+{% block title %}home{% endblock %}
+
+<!--Conteúdo-->
+{% block content %}
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/img/carrocel_1.png" alt="Los Angeles" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/img/carrocel_2.jpg" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/img/carrocel_3.png" alt="New York" class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<div class="pt-3 pb-5 bg-gray content container-fluid">
+  <div class="container">
+      <h2 class="py-3 text-center">Curiosidades</h2>
+      <div class="row gy-3 gy-md-4 gy-lg-0">
+          <div class="col-12 col-lg-6">
+              <div class="card bg-light p-3 m-0">
+                  <div class="row gy-3 gy-md-0 align-items-md-center">
+                      <div class="col-md-5">
+                          <center>
+                              <img src="/static/img/carrocel_1.png" class="img-fluid rounded" alt="Dungeon Master">
+                          </center>
+                      </div>
+                      <div class="col-md-7">
+                          <div class="card-body p-0">
+                              <h2 class="card-title h4 mb-3">text</h2>
+                              <p class="card-text lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda qui illo magni, quam at accusantium ad, culpa amet quia commodi magnam laudantium perspiciatis incidunt.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-lg-6">
+              <div class="card bg-light p-3 m-0">
+                  <div class="row gy-3 gy-md-0 align-items-md-center">
+                      <div class="col-md-5">
+                          <center>
+                              <img src="/static/img/carrocel_2.jpg" class="img-fluid rounded" alt="Player">
+                          </center>
+                      </div>
+                      <div class="col-md-7">
+                          <div class="card-body p-0">
+                              <h2 class="card-title h4 mb-3">text</h2>
+                              <p class="card-text lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit corrupti modi nostrum quo sed. Maiores blanditiis vel cumque quo nemo hic sint laborum quaerat pariatur quis.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div>
+  <div class="row gx-4 gx-lg-5 align-items-center justify-content-center py-3 container-fluid">
+    <div class="col-lg-5">
+        <h2 class="font-weight-light">História</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi rerum possimus ipsam natus. Aut animi illum doloribus porro nulla unde! Pariatur repellendus repellat minus ab eos tempore, omnis quas? Modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias neque ea aspernatur, voluptate consequuntur tempora assumenda pariatur rerum beatae ab soluta doloribus quaerat temporibus earum maiores harum illo dolorum eveniet?
+        </p>
+        <a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a>
+    </div>
+    <!-- caminho da imagem da seção "O que é Scrum?" -->
+    <div class="col-lg-5">
+      <img class="img-fluid mb-4 mb-lg-0 text-center" src="/static/img/carrocel_1.png" alt="..." />
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="row gx-4 gx-lg-5 align-items-center justify-content-center py-3 container-fluid">
+        <!-- caminho da imagem da seção "O que é Scrum?" -->
+    <div class="col-lg-5">
+      <img class="img-fluid mb-4 mb-lg-0 text-center" src="/static/img/carrocel_1.png" alt="..." />
+    </div>
+    <div class="col-lg-5">
+        <h2 class="font-weight-light">Enredo</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi rerum possimus ipsam natus. Aut animi illum doloribus porro nulla unde! Pariatur repellendus repellat minus ab eos tempore, omnis quas? Modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias neque ea aspernatur, voluptate consequuntur tempora assumenda pariatur rerum beatae ab soluta doloribus quaerat temporibus earum maiores harum illo dolorum eveniet?
+        </p>
+        <a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="row gx-4 gx-lg-5 align-items-center justify-content-center py-3 container-fluid">
+    <div class="col-lg-5">
+        <h2 class="font-weight-light">Jogabilidade</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi rerum possimus ipsam natus. Aut animi illum doloribus porro nulla unde! Pariatur repellendus repellat minus ab eos tempore, omnis quas? Modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias neque ea aspernatur, voluptate consequuntur tempora assumenda pariatur rerum beatae ab soluta doloribus quaerat temporibus earum maiores harum illo dolorum eveniet?
+        </p>
+        <a class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#myModal">Saiba mais</a>
+    </div>
+    <!-- caminho da imagem da seção "O que é Scrum?" -->
+    <div class="col-lg-5">
+      <img class="img-fluid mb-4 mb-lg-0 text-center" src="/static/img/carrocel_1.png" alt="..." />
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+      <div class="modal-content">
+  
+          <div class="modal-header">
+              <h4 class="modal-title"></h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+      
+          <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor, eum ipsam similique, provident consequuntur nam laudantium adipisci, sequi voluptas iure numquam! Libero maxime quidem, recusandae doloremque soluta accusantium rerum.
+          </div>
+      
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Continuar</button>
+          </div>
+  
+      </div>
+  </div>
+</div>
+{% endblock %}
